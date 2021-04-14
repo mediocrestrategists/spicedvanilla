@@ -43,20 +43,20 @@
 
 ## Arabia
 ### Formation
-#### Requirements
+**Requirements**
 
 
-#### Effects
+**Effects**
 
 
-### Ideas 
-#### Traditions:
+**Ideas**
+**Traditions:**
 
 
-#### Ideas:
+**Ideas:**
 
 
-#### Ambition:
+**Ambition:**
 
 
 
@@ -64,25 +64,25 @@
 
 ## Nubia
 ### Formation
-#### Requirements
+**Requirements**
 - Nubia doesn't exist
 - Isn't Colonial nation
 - Culture Group is Nubian
 - Primary Culture not Sudanese
 - Owns Qasa Imbrim and Soba
 
-#### Effects
+**Effects**
 - Get Kingdom Rank
 - Add permanent claims on Upper Nubia, Lower Nubia and Dongola
 - Add 25 Prestige
 - Get Nubian Ideas
 
 ### Ideas 
-#### Traditions:
+**Traditions:**
 - +10% Infantry Combat Ability
 - +1 Hostile Attrition
 
-#### Ideas:
+**Ideas:**
 1. +10% Trade Efficency, +20% Caravan Power
 2. -10% Land Attrition
 3. +1 Yearly Legitimacy
@@ -91,7 +91,7 @@
 6. +5% Discipline
 7. +15% Production Efficency
 
-#### Ambition:
+**Ambition:**
 - +1 Colonist
 
 
