@@ -1,0 +1,35 @@
+#Scripted effects for estates
+
+# Will apply effect if estate is present
+# effect: Will apply effect to each estate present if defined
+# <estate>_effect: Will apply effect to specific estate present if defined
+
+on_province_owner_change_estate_privileges_effect = {
+	if = {
+		limit = { OR= {has_terrain = desert
+				has_terrian = coastal_desert}}
+
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nomads_norias
+				}
+				NOT = { has_province_modifier = estate_nomads_noria_mod }
+			}
+			add_province_modifier = {
+				name = estate_nomads_noria_mod
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_terrain = steppe
+			has_province_modifier = estate_nomads_noria_mod
+			owner = {
+				NOT = { has_estate_privilege = estate_nomads_norias }
+			}
+		}
+		remove_province_modifier = estate_nomads_noria_mod
+	}
+}

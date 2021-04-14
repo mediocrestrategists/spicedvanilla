@@ -1,0 +1,13 @@
+﻿l_english:
+estate_nomads:0 "Nomads"
+estate_nomads_desc:0 "The Nomads are the people of the Desert. They move their large herds of cattle and camels between the sparse herding grounds of the endless sand sea. Although far from the influence of the other estates, the Nomads play a vital part in exploiting the potential of the desert regions of our realm."
+estate_nomads_disaster:0 "Nomad Independence"
+estate_nomads_disaster_desc:0 "The Nomads have grown so powerful that they have broken off to form a country of their own, outside of our control."
+estate_nomads_norias:0 "Commission Norias"
+estate_nomads_norias_desc:0 "Finance the Nomads in building Norias in dunes of their desert home."
+nomads_loyalty_modifier:1 "Nomads Loyalty Equilibrium"
+nomads_influence_modifier:0 "Nomads Influence"
+estate_nomads_noria_mod:0 "Noria"
+desc_estate_nomads_noria_mod:0 "We commisoned the Nomads in this province to build a Noria, irrigating the desert."
+estate_nomads_norias_effect_tooltip:1 "§G-30%§! local development cost in all Desert provinces"
+estate_nomads_noria_mod_revoke_tooltip:0 "Removes §YNorias§! from all owned Desert provinces."

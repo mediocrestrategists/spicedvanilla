@@ -1,0 +1,32 @@
+sahara_monarchy = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				tag = ALO
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = MAK
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = XNU
+				NOT = { map_setup = map_setup_random }
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	modifiers = {
+		global_autonomy = -0.05
+		governing_capacity = 150
+	}
+
+	government_abilities = {
+			iqta_mechanic
+		}
+	}
+}

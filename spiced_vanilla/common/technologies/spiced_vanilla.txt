@@ -1,0 +1,9 @@
+monarch_power = ADM
+
+# Pre-era techs
+technology = { #Tribal Government
+	# Tech 0
+	year = 1350
+	
+	noria=yes
+}

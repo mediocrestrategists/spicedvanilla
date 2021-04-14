@@ -1,0 +1,140 @@
+estate_nomads = {
+	icon = 5
+	
+	# Used for when declaring independence
+	independence_government = tribal
+	starting_reform = tribal_kingdom
+	independence_tech_group = nomad_group
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			has_terrain = steppe
+		}
+		modifier = {
+			factor = 2
+			culture_group = east_slavic
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_group = christian }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			development = 15
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+	}
+
+	# If true, country will get estate
+	
+	trigger = {	
+		has_dlc = "The Cossacks"
+		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		is_nomad = no
+		is_colonial_nation = no
+		NOT = { has_reform = celestial_empire }
+		unit_type = sub_saharan
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+			religion = jewish
+		}
+		NOT = { has_reform = revolutionary_empire_reform }
+		OR = {
+			has_estate = estate_nomads
+			any_owned_province = {
+				has_terrain = desert
+			}
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		trade_efficency = 0.05
+		caravan_power = 0.5
+		global_unrest = -1
+	}
+	country_modifier_neutral = {
+		caravan_power = 0.5
+	}	
+	country_modifier_angry = {
+		trade_efficency = -0.05
+		caravan_power= -0.5
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		nomads_loyalty_modifier = 0.2
+	}
+
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = {
+		desc = EST_DESERT_PROVINCES
+		trigger = {
+			any_owned_province = {
+				has_terrain = desert
+			}
+			num_of_cities = 10
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_cossacks_disaster
+			}
+		}
+		influence = -40
+	}
+
+	influence_from_dev_modifier = 2.0
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+				has_disaster = estate_cossacks_disaster
+			}
+		}
+		loyalty = -20
+	}
+
+	privileges = {
+		estate_nomads_norias
+	}
+
+	agendas = {
+
+	}
+
+	color = { 150 200 150 }
+}

@@ -1,0 +1,26 @@
+noria = {
+	cost = 400
+	time = 12
+	modifier = {
+			local_development_cost = -0.40
+			allowed_num_of_buildings = 2
+			local_tax_modifier = -0.6
+			local_production_efficiency = -0.8
+
+	}
+	build_trigger = {
+	AND = {
+		owner = { has_reform = sahara_monarchy}
+        	OR = {
+				has_terrain = desert
+				has_terrain = coastal_desert
+				}
+	}
+    	}
+
+	allow_in_gold_provinces = no
+
+	ai_will_do = {
+		factor = 1
+	}
+}

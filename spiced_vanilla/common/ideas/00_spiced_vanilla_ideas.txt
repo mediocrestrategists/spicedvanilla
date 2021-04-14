@@ -1,0 +1,79 @@
+XNU_ideas = {
+	start = {
+		hostile_attrition = 1
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		colonists = 1
+	}
+	
+	trigger = {
+			tag = XNU
+	}
+	free = yes		#will be added at load.
+
+	caravaneers = {
+		trade_efficiency = 0.1
+		caravan_power = 0.2
+	}
+	desert_warriors = {
+		land_attrition = -0.10
+	}
+	ancient_lineage = {
+		legitimacy = 1
+		republican_tradition = 0.2
+	}
+	qasr_imbrim_fort = {
+		defensiveness = 0.20
+	}
+	camel_logistics = {
+		movement_speed = 0.15
+	}
+	custodians_of_the_nile = {
+		discipline = 0.05
+	}
+	irrigate_the_desert = {
+		production_efficiency = 0.15
+	}
+}
+
+EGY_ideas = {
+	start = {
+		hostile_attrition = 1
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		colonists = 1
+	}
+	
+	trigger = {
+			tag = XNU
+	}
+	free = yes		#will be added at load.
+
+	caravaneers = {
+		trade_efficiency = 0.1
+		caravan_power = 0.2
+	}
+	desert_warriors = {
+		land_attrition = -0.10
+	}
+	ancient_lineage = {
+		legitimacy = 1
+		republican_tradition = 0.2
+	}
+	qasr_imbrim_fort = {
+		defensiveness = 0.20
+	}
+	camel_logistics = {
+		movement_speed = 0.15
+	}
+	custodians_of_the_nile = {
+		discipline = 0.05
+	}
+	irrigate_the_desert = {
+		production_efficiency = 0.15
+	}
+}
